@@ -1,0 +1,133 @@
+section.calculator {
+    padding: 7.5rem 0 4.5rem 0;
+    margin: 0 auto;
+    text-align: center;
+    &.hidden {
+        display: none;
+    }
+    h3{
+        font-family: $second-font;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 47px;
+        margin-bottom: 4rem;
+    }
+    .calculator.main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            input[type="text"] {
+                height: 2.8rem;
+                width: 31.5rem;
+                padding: 1rem;
+                box-shadow: 0px 3px 6px #08A6E429;
+                border: 1px solid $main-color;
+                border-radius: 6px;
+                margin-bottom: 2rem;
+                color: $font-color-second;
+                font-size: 13px;
+                line-height: 18px;
+                font-family: $main-font;
+            }
+            select {
+                height: 2.8rem;
+                width: 31.5rem;
+                padding: 0 .8rem;
+                box-shadow: 0px 3px 6px #08A6E429;
+                border: 1px solid $main-color;
+                border-radius: 6px;
+                margin-bottom: 2rem;
+                color: $font-color-second;
+                font-size: 13px;
+                line-height: 18px;
+                font-family: $main-font;
+            }
+            input[type="checkbox"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                height: 24px;
+                width: 24px;
+                padding: 5px;
+                background-color: #fff;
+                border: 1px solid #95989A;
+                border-radius: 6px;
+                margin-right: 1rem;
+                &:focus {
+                    outline: none;
+                    border: 1px solid $secondary-color-blue;
+                    border-radius: 6px;
+                }
+            }
+            
+            /* customowy checkbox tick */
+            
+            input[type="checkbox"]:checked::after {
+                content: url('../assets/Checkmark.svg');
+                position: absolute;
+            }
+    
+    
+           label.checkbox{ 
+            font-family: $main-font;
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.2rem;
+            color: #707070;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;           
+            }
+        }
+        .stripes .stripe {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 2.2rem;
+            width: 27.5rem;
+            background: $secondary-color-green;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 6px;
+            color: white;
+            padding: .5rem 1.5rem;
+            margin-bottom: .5rem;
+            font-family: $main-font;
+            font-size: 14px;
+            line-height: 19px;
+            visibility: hidden;
+            &.total {
+                height: 2.7rem;
+                width: 12.7rem;
+                margin-top: 1rem;
+                margin-left: auto;
+                background: $main-color;
+                visibility: visible;
+            }
+            &.accounting p.big{
+                margin-left: auto;
+            }
+            &.rental p.big{
+                margin-left: auto;
+            }
+            &.total p.big{
+                margin-left: auto;
+            }
+            p.center{
+                text-align: center;
+                margin: 0 auto;
+            }
+            p.big {
+                font-family: $main-font;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}

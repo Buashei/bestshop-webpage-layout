@@ -1,0 +1,95 @@
+.pricing {
+    text-align: center;
+    padding: (2.5 + $header-height) 0 2.5rem 0;
+    h2 {
+        font-family: $second-font;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    article{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $secondary-color-red;
+        border-radius: 18px;
+        margin: 2.5rem 4rem 4rem 4rem;
+        padding: 0 2rem;
+        position: relative;
+        &::after{
+            content: "Begin";
+            padding: 0 4rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: -1.5rem;
+            left: calc(50% - (11rem/2));
+            background: $secondary-color-red;
+            border: 1px solid $secondary-color-red;
+            border-radius: 2rem;
+            font-family: $main-font;
+            font-weight: 700;
+            color: white;
+            line-height: 3rem;
+        }
+        &.professional{
+            border: 1px solid $secondary-color-blue;
+            box-shadow: 5px 10px 27px #07ACE629;
+            margin: 2.5rem 2rem 4rem 2rem;
+            &::after{
+                background: $secondary-color-blue;
+                border: 1px solid $secondary-color-blue;
+            }
+            p{
+                color: $secondary-color-blue;
+            }
+        }
+        &.premium{
+            border: 1px solid $secondary-color-green;
+            &::after{
+                background: $secondary-color-green;
+                border: 1px solid $secondary-color-green;
+            }
+            p{
+                color: $secondary-color-green;
+            }
+        }
+        h3{
+            font-family: $second-font;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        p{
+            font-family: $main-font;
+            font-size: 3rem;
+            font-weight: 300;
+            color: $secondary-color-red;
+        }
+        h4{
+            font-family: $second-font;
+            font-weight: 700;
+        }
+        ul{
+            list-style: none;
+            text-align: left;
+            padding: 1rem 0 2.5rem 0;
+            li{
+                font-family: $main-font;
+                font-weight: 600;
+                line-height: 3rem;
+            }
+        }
+        .green{
+            &::before{
+                content: url('../assets/Ckechmark-1.svg');
+                margin-right: 1rem;
+            }
+        }
+        .red{
+            &::before{
+                content: url('../assets/Close.svg');    
+                margin-right: 1rem;
+            } 
+        }
+    }
+}

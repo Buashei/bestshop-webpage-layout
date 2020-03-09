@@ -1,0 +1,101 @@
+section.contact {
+    padding: 7.5rem 2.5rem 2.5rem 2.5rem;
+    .container {
+        max-width: 1200px;
+    }
+    h2 {
+        font-family: $second-font;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    p {
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 1rem;
+        &.contact{
+            color: $font-color-second;
+            font-weight: 600;
+            &::before{
+                content: url('../assets/Mail%20Icon.svg');
+                padding-right: .5rem;
+                vertical-align: -30%
+            }
+            &:nth-of-type(2){
+                margin-top: 3rem;
+            }
+            &:nth-of-type(3){
+                margin-bottom: 3rem;
+            }
+            &:nth-of-type(3)::before {
+                content: url('../assets/Phone%20Icon.svg')
+            }
+        }
+    }
+    form{
+        display:block;
+        position:relative;
+        label{
+            display: block;
+            font-family: $main-font;
+            font-size: .8rem;
+            font-weight: 700;
+            line-height: 1rem;
+            letter-spacing: 3.28px;
+            color: $secondary-color-blue;
+            text-transform: uppercase;
+        }
+        input.text {
+            display: block;
+            height: 2rem;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #95989A;
+            margin: 3rem 0;
+        }
+
+        input.data {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 24px;
+            width: 24px;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #95989A;
+            border-radius: 6px;
+            display: block;
+            float: left;
+            &:focus {
+                outline: none;
+                border: 1px solid $secondary-color-blue;
+                border-radius: 6px;
+            }
+        }
+        
+        /* customowy checkbox tick */
+        
+        input.data:checked::after {
+            content: url('../assets/Checkmark.svg');
+            position: absolute;
+        }
+
+
+       label.data{ 
+            display: block;
+            right: 2rem;
+            font-family: $main-font;
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.2rem;
+            color: #707070;
+            text-transform: none;
+            letter-spacing: 0;
+            padding-left: 2rem;
+        }
+        .button{
+            margin-top: 2rem;
+            margin-left: auto;
+        }
+    }
+}

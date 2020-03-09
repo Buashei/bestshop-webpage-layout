@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+    <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/index.js"></script>
+    <title>BestShop - Warsztaty</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">BestShop</a></div>
+        <nav>
+            <ul>
+                <li><a href="#why_us">why us</a></li>
+                <li><a href="#benefits">benefits</a></li>
+                <li><a href="#pricing">pricing</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-bars hidden"></i>
+    </header>
+
+    <section class="first">
+        <h1>Sell More!</h1>
+        <p>Open shop on our platform and increase your sales</p>
+        <div class="button">Open your shop</div>
+    </section>
+    <section class="why_us" id="why_us">
+        <h2>The most popular sales platform in country</h2>
+        <div class="article">
+            <article>
+                <div class="shape first"><img src="./assets/Person.svg" alt="person shape icon"></img></div>
+                <h3>100000+</h3>
+                <p>daily entries</p>
+            </article>
+            <article>
+                <div class="shape second"><img src="./assets/Eye.svg" alt="eye shape icon"></div>
+                <h3>2000000+</h3>
+                <p>seen products every day</p>
+            </article>
+            <article>
+                <div class="shape third"><img src="./assets/Catalog.svg" alt="catalog shape icon"></div>
+                <h3>10000+</h3>
+                <p>added posts daily</p>
+            </article>
+        </div>
+    </section>
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="imgShape first"><img src="./assets/Macbook.png" alt="macbook photo"></div>
+            <div>
+                <h3>Be always first</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="container">
+            <div class="second"></div><img src="./assets/iPhone.png" alt="iphone photo">
+            <div>
+                <h3>Your shop is where you are!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="container last">
+            <div class ="first">
+                <h3>Increase<br> recognition your<br> brand!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <hr>
+            </div>
+            <div class="container mini"><img src="./assets/Trumpet.png" alt="iphone photo"></div>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <h2>Pricing</h2>
+       <div>
+        <article>
+            <span><h3>Basic</h3><p>$0</p></span>
+            <ul>
+                <li class="green">100 MB HDD</li>
+                <li class="green">1 Subdomain</li>
+                <li class="green">2 E-mails</li>
+                <li class="red">Two years license</li>
+                <li class="red">Full support</li>
+            </ul>
+        </article>
+        <article class="professional">
+            <span><h3>Professional</h3><p>$25</p><h4>Limited offer</h4></span>
+            <ul>
+                <li class="green">500 MB HDD</li>
+                <li class="green">2 Subdomain</li>
+                <li class="green">5 E-mails</li>
+                <li class="green">One years license</li>
+                <li class="red">Full support</li>
+            </ul>
+        </article>
+        <article class="premium">
+            <span><h3>Premium</h3><p>$60</p><h4>Limited offer</h4></span>
+            <ul>
+                <li class="green">2 GB HDD</li>
+                <li class="green">5 Subdomain</li>
+                <li class="green">20 E-mails</li>
+                <li class="green">Two years license</li>
+                <li class="green">Full support</li>
+            </ul>
+        </article>
+       </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div>
+                <h2>Any questions?</h2>
+                <p>Leave your email address or call us!</p>
+                <p class="contact">info@bestshop.xyz</p>
+                <p class="contact">123 456 789</p>
+            </div>
+            <form>
+                <label for="name">name</label>
+                <input type="text" name="name" class="text">
+                <label for="mail">email</label>
+                <input type="text" name="mail" class="text">
+                <input type="checkbox" class="data"><label class="data">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                <div class="button">Send</div>
+            </form>
+        </div>
+    </section>
+    <section class="calculator" id="calculator">
+        <h3>Calculate how much you’ll pay</h3>
+        <div class="calculator main">
+            <form name="calculator">
+                <input type="text" id="products" placeholder="Products quantity">
+                <input type="text" id="orders" placeholder="Estimated orders in month">
+                <select id="option">
+                    <option value="" disabled selected hidden>Choose package</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Premium">Premium</option>
+                  </select>
+                <label class="checkbox" for="accounting"><input  id="accounting"  type="checkbox" name="accounting">Accounting</label>
+                <label class="checkbox" for="rental"><input id ="rental" type="checkbox" name="rental">Rental of a payment terminal</label>
+            </form>
+            <div class="stripes">
+                <div class="stripe products">
+                    <p>Products</p>
+                    <p class="center"></p>
+                    <p class="big">$0</p>
+                </div>
+                <div class="stripe orders">
+                    <p>Orders</p>
+                    <p class="center">30 *$0.25</p>
+                    <p class="big">$0</p>
+                </div>
+                <div class="stripe package">
+                    <p>Package</p>
+                    <p class="center">Premium</p>
+                    <p class="big">$0</p>
+                </div>
+                <div class="stripe accounting">
+                    <p>Accounting</p>
+                    <p class="big">$0</p>
+                </div>
+                <div class="stripe rental">
+                    <p>Terminal</p>
+                    <p class="big">$0</p>
+                </div>
+                <div class="stripe total">
+                    <p>Total</p>
+                    <p class="big">$0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href="">BestShop</a>
+            <p>&#169; 2019 BestShop LTD, All Rights Reserved</p>
+        </div>
+        <div class="footer social">
+            <img src="./assets/Twitter.svg">
+            <img src="./assets/Facebook.svg">
+        </div>
+    </footer>
+</body>
+</html>

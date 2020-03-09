@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    width: 100%;
+    color: $main-color;
+    background: #fff;
+    position: fixed;
+    z-index: 3;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    .logo {
+        margin-left: 2rem;
+        font-family: $main-font;
+        font-size: 2.5rem;
+        font-weight: 300;
+        z-index: 4;
+        a{
+            text-decoration: none;
+            color: $main-color;
+        }
+    }
+    .fas.fa-bars {
+        margin-right: 2rem;
+        font-size: 2rem;
+        z-index: 4;
+    }
+    .hidden {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 7.5rem;
+        width: 100%;
+        position: absolute;
+        top: $header-height;
+        ul {
+            list-style: none;
+            box-shadow: 0px 3px 6px #00000029;
+            padding: 2rem;
+            background: #fff;
+            li {
+                text-transform: uppercase;
+                padding: 0.5rem 0;
+                a {
+                    font-family: $second-font;
+                    letter-spacing: 0.25rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: $font-color-second;
+                    &.active{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.first {
+    height: 100vh;
+    padding-top: (7 + $header-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url(../assets/Background.png);
+    background-position: bottom;
+    background-size: auto 30%;
+    background-repeat: no-repeat;
+    h1 {
+        font-family: $second-font;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+    p {
+        font-family: $main-font;
+        font-size: 1.5rem;
+        padding: 1rem 4rem 2rem 4rem;
+    }
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 22rem;
+    border-radius: 40px;
+    background: $main-color;
+    box-shadow: 5px 10px 14px #07ACE629;
+    font-family: $main-font;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+

@@ -1,0 +1,197 @@
+@media (min-width: 834px) {
+    header {
+        .logo{
+            margin-left: 3.5rem;
+        }
+        nav{
+            width: auto;
+            flex-direction: row;
+            height: $header-height;
+            position: relative;
+            top: 0;
+            z-index: 4;
+            ul {
+                display: flex;
+                align-items: center;
+                box-shadow: none;
+                background-color: transparent;
+                li{
+                    padding: 0 1.5rem;
+                    &:hover {
+                        a{
+                            color: black;
+                            border-bottom: 4px solid $secondary-color-blue;
+                            padding: calc(1.5rem + 4px) 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    section.first {
+        background-size: auto 40%;
+    }
+    section.why_us {
+        height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        .article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5rem 0;
+            article {
+                max-width: 500px;
+            }
+        }
+    }
+    section.benefits {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 5rem auto;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            position: relative;
+            img {
+                width: 40%;
+                height: 50%;
+                position: relative;
+            }
+            div p {
+                margin-bottom: 2rem;
+            }
+            .imgShape.first {
+                border: none;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 155px;
+                    height: 155px;
+                    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                    background: #FB3B64 0% 0% no-repeat padding-box;
+                    border-radius: 41px;
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    right: 10%;
+                }
+                img {
+                    height: auto;
+                    width: auto;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+            .first {
+                background-color: $background-color;
+                margin:0;
+                width: 60%;
+                min-height: 340px;
+                padding: 3.19rem;
+                border-radius: 5px;
+                 h3 {
+                    margin: 0;
+                    margin-bottom: 2rem;
+                }
+                 p  {
+                    margin: 0;
+                    margin-bottom: 2rem;
+                }
+                img[alt="iphone photo"] {
+                    height: 50%;
+                    width: 50%;
+                    z-index:2;
+                    position: relative;
+                }
+            }
+            .second {
+                display: block;
+                width: 27%;
+                height: 70%;
+                background-color: $main-color;
+                border-radius: 50%;
+                position: absolute;
+                top: 3%;
+                left: 2%;
+            }
+        }
+        .container.last {
+            background-color: transparent;
+            border: none;
+           
+        }
+
+        .container.mini {
+            padding: 1rem;
+        }
+        hr {
+            border: 4px solid #55DFB4;
+            width: 60%;
+        }
+    }
+    section.pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5.5rem 0 2.5rem 0;
+        > div {
+            display: flex;
+            flex-direction: row;
+            article {
+                display: flex;
+                flex-direction: column;
+                padding: 2rem 5rem;
+                margin: 2.5rem 2rem 4rem 2rem;
+                ul {
+                    text-align: center;
+                }
+                &.professional {
+                    margin: 1rem 2rem 2rem 2rem;
+                    padding: 3rem 7rem;
+                }
+            }
+        }
+    }
+    section.contact {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        .container{
+            display: flex;
+            form{
+                width: 40%;
+                margin-left: auto;
+                label.data {
+                    font-size: 0.6rem;
+                    .button {
+                        height: 3.5rem;
+                        width: 16rem;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 0 3.5rem;
+    }
+}
+@media (max-width: 500px) {
+    section.pricing {
+        article {
+            ul li {
+                font-size: .5rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .button {
+        height: 4rem;
+        width: 16rem;
+    }
+}
