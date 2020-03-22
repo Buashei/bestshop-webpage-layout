@@ -7,32 +7,38 @@ function test() {
     hamburger.addEventListener('click', function(){
         nav.classList.toggle('hidden');
     });
+    if(width < 817){
+        nav.className="hidden";
+        hamburger.className="fas fa-bars";
+        calculator.className = "calculator hidden";
+    } else {
+        nav.className="";
+        hamburger.classList="hidden";
+        calculator.className = "calculator";
+    }
+
+
     li.forEach(function(element){
         element.addEventListener('click', function(){
             if(width < 817){
-            nav.className = "hidden";
-        } else {
-            nav.className = ""; 
-        }
-    });
-})
-if(width < 817){
-    nav.className="hidden";
-    hamburger.className="fas fa-bars";
-    calculator.className = "calculator hidden";
-} else {
-    nav.className="";
-    hamburger.classList="hidden";
-    calculator.className = "calculator";
-}
+                nav.className = "hidden";
+            } else {
+                nav.className = ""; 
+            }
+        });
+    })
 }
 
 window.addEventListener('DOMContentLoaded', function(){
-    test();
+    
 
     window.addEventListener("resize", function(){
-        test();
+         test();
     })
+
+
+
+
     // inputs
     const inputProducts = document.querySelector('#products');
     const inputOrders = document.querySelector('#orders');
